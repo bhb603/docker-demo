@@ -1,0 +1,6 @@
+<%= ENV["APP_ENV"] || "development" %>:
+  clients:
+    default:
+      database: things
+      hosts:
+        - <%= ENV["MONGO_HOST"] || "localhost" %>:<%= ENV["MONGO_PORT"] || "27017" %>
