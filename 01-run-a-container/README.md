@@ -47,7 +47,7 @@ Interact with your new container!
   CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES
 11bd7af0926d        nginx               "nginx -g 'daemon of…"   6 seconds ago       Up 4 seconds        0.0.0.0:8080->80/tcp   my-server
   ```
-- Since this is an nginx server, let's  visit in a browser: checkout http://localhost:8080
+- Since this is an nginx server, and host port 8080 is forwarded to container port 80, visit in a browser: http://localhost:8080
 - Follow the logs:
   ```sh
   docker logs -f my-server
