@@ -9,11 +9,11 @@ docker build [OPTIONS] PATH
 In this directory, we have a `Dockerfile` containing build instructions, and some source code, so we can build a custom nginx image.
 1. Build the custom image:
   ```sh
-  cd /path/to/02-build-an-image
+  cd /path/to/docker-demo/02-build-an-image
   docker build -t my-project/server:v1.0.0 .
   ```
   - `-t my-project/server:v1.0.0` tags the image
-  - `/path/to/02-build-an-image` is the path to the **build context**, which contains the files we want to send to the image (nginx.conf, www/index.html) as well as the `Dockerfile` itself
+  - `.` is the path of the **build context** (in this case the current working dir), which contains the files we want to send to the image (nginx.conf, www/index.html) as well as the `Dockerfile` itself
 2. Run a container from our new image:
   ```sh
   docker run --rm -p 8080:80 my-project/server:v1.0.0
