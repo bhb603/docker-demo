@@ -17,3 +17,18 @@ Start it up:
 ```sh
 docker-compose up -d
 ```
+
+Useful commands:
+```sh
+# list docker-compose services
+docker-compose ps
+
+# follow the logs of ALL services
+docker-compose logs -f
+
+# follow the logs of just one service
+docker-compose logs -f web
+
+# exec
+docker-compose exec web bash
+```

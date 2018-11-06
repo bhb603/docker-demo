@@ -30,10 +30,6 @@ post '/new' do
   end
 end
 
-# get '/random' do
-#
-# end
-
 # Models
 
 require 'mongoid'
