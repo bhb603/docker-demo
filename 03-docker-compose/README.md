@@ -32,3 +32,8 @@ docker-compose logs -f web
 # exec
 docker-compose exec web bash
 ```
+
+Bring it down:
+```sh
+docker-compose down
+```
